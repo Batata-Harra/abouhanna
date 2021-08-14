@@ -35,7 +35,8 @@ body {
 }
 
 ::selection {
-  background: var(--accent-bg); /* WebKit/Blink Browsers */
+  background: var(--accent-bg);
+  /* WebKit/Blink Browsers */
 }
 
 :focus {
@@ -150,6 +151,10 @@ a.animated-underline:hover:before {
 
 .d-inline-flex {
   display: inline-flex;
+}
+
+.font-style-italic {
+  font-style: italic;
 }
 
 /* homepage classes
@@ -307,6 +312,34 @@ a.animated-underline:hover:before {
   background: var(--accent-bg);
 }
 
+/* spotify's currently playing */
+.currently-playing-section {
+  padding: 4rem 0.75rem 2rem 0.75rem;
+}
+
+.currently-playing-container {
+  display: flex;
+  align-items: center;
+}
+
+.album-cover,
+.album-cover-empty-state {
+  width: 80px;
+}
+
+.more-info {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 0.75rem;
+  font-size: 1.1rem;
+  line-height: 25px;
+}
+
+.song-name {
+  font-weight: 900;
+  padding: 0.15rem 0;
+}
+
 /* desktop styles
      ========================================================================== */
 @media screen and (min-width: 600px) {
@@ -378,6 +411,15 @@ a.animated-underline:hover:before {
 
   .contact-inner {
     padding: 4em .75em;
+  }
+
+  /* spotify's currently playing */
+  .currently-playing-section {
+    padding: 1rem 0 4rem 0;
+  }
+
+  .currently-playing-container {
+    justify-content: center;
   }
 }
 

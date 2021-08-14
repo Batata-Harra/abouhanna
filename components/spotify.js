@@ -4,7 +4,7 @@ class Spotify extends HTMLElement {
     }
     connectedCallback() {
       this.innerHTML = `
-        <section class="spotify-currently-playing" >
+        <section class="currently-playing-section accent-bg" >
           
         </section>
           `;
