@@ -61,7 +61,7 @@ const getCurrentSpotifyMusic = () => {
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
-      'Authorization': 'Bearer BQCwFE4cV851xh5FylnIPXihYcA6GedOQ1C3FkHY21wY6IFHlOdAJkFwNn6mrrehPP9ON-tHieEGG4uZ0xkvtAOCO4FW0-oILVGXjUbhVFsNG287X-n0WZMeRHlUAb5glM5k-d-_p41PkAmFCm23SEwiyGuY4jkSA0HEl8ea'
+      'Authorization': 'Bearer'
     }
   })
 
@@ -80,8 +80,6 @@ const getCurrentSpotifyMusic = () => {
 const renderCurrentSpotifyMusic = (currentMusicData) => {
   const shortcodes = document.querySelectorAll('.currently-playing-section');
   if (currentMusicData === null || currentMusicData.is_playing === false) {
-    // 
-    alert('Not playing interface to be done...');
     shortcodes.forEach(element => {
       element.innerHTML = `
         <div>
