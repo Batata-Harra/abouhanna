@@ -11,14 +11,7 @@ template.innerHTML = `
 .icon {
   font-size: 100px;
 }
-a {
-    color: #bf8348;
-    padding: 0 4px
-}
-a:hover {
-    color: #ffda56;
-    transition: .3s
-}
+
 </style>
 
 <div class="webring">
@@ -55,8 +48,8 @@ class WebRing extends HTMLElement {
         const cp = `       
           <p>
             <a href="${sites[prevSiteIndex].url}">Prev</a>
+            <a href="https://kevinabouhanna.github.io/batata-harra-webring/">🥔</a>
             <a href="${sites[nextSiteIndex].url}">Next</a>
-            <a href="${sites[randomSiteIndex].url}">Random</a>
           </p>
         `;
 
